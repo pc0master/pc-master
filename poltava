@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Полтава — Місто Перемог та Натхнення</title>
+    <style>
+        :root { --main: #2c3e50; --accent: #3498db; --gold: #f1c40f; --bg: #f4f7f6; }
+        body { font-family: 'Segoe UI', Roboto, sans-serif; margin: 0; background: var(--bg); color: #333; line-height: 1.6; }
+        
+        .lang-nav { position: fixed; top: 20px; right: 20px; z-index: 1000; }
+        .lang-nav button { background: rgba(0,0,0,0.6); border: 1px solid #fff; color: #fff; padding: 8px 15px; cursor: pointer; border-radius: 8px; font-weight: bold; }
+        .lang-nav button.active { background: var(--gold); color: #000; border-color: var(--gold); }
+
+        header { 
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('7413.jpg'); 
+            background-size: cover; background-position: center; background-attachment: fixed; height: 60vh; 
+            display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; text-align: center;
+        }
+
+        .main-container { max-width: 1200px; margin: -50px auto 50px; display: grid; grid-template-columns: 2fr 1fr; gap: 30px; padding: 0 20px; }
+        .card { background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); margin-bottom: 30px; }
+        
+        h2 { color: var(--main); border-left: 5px solid var(--gold); padding-left: 15px; margin-top: 0; }
+        p { margin-bottom: 15px; text-align: justify; }
+
+        /* Стили для молодежных мест */
+        .spot { background: #fdf9e7; padding: 15px; border-radius: 10px; margin-bottom: 15px; border-left: 3px solid var(--gold); }
+        .spot strong { color: #d35400; display: block; margin-bottom: 5px; }
+
+        .vibe-box { background: var(--main); color: #fff; padding: 25px; border-radius: 15px; }
+        .tv-btn { background: #e74c3c; color: #fff; text-decoration: none; padding: 15px; border-radius: 10px; display: block; text-align: center; font-weight: bold; margin-top: 20px; }
+
+        [lang="en"] { display: none; }
+        .en-mode [lang="uk"] { display: none; }
+        .en-mode [lang="en"] { display: block; }
+
+        @media (max-width: 900px) { .main-container { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div class="lang-nav">
+    <button id="ua-btn" class="active" onclick="setLang('uk')">UA</button>
+    <button id="en-btn" onclick="setLang('en')">EN</button>
+</div>
+
+<header>
+    <h1 style="font-size: 4rem; margin: 0; text-shadow: 3px 3px 10px rgba(0,0,0,0.5);">ПОЛТАВА</h1>
+    <p style="font-size: 1.5rem;" lang="uk">Духовна столиця, що крокує в майбутнє</p>
+    <p style="font-size: 1.5rem;" lang="en">The spiritual capital stepping into the future</p>
+</header>
+
+<div class="main-container">
+    <main>
+        <div class="card">
+            <h2 lang="uk">📜 Історія вільного міста</h2>
+            <h2 lang="en">📜 History of the Free City</h2>
+            
+            <div lang="uk">
+                <p>Полтава — це місто, де кожен камінь має голос. Офіційною датою заснування вважається 899 рік, хоча люди жили тут ще за часів скіфів. Полтава завжди була "ключем" до України. Саме тут у 1709 році відбулася битва, що змінила карту Європи.</p>
+                <p>Але справжнє серце міста — це культура. Саме тут Іван Котляревський написав "Енеїду", започаткувавши сучасну українську мову. Наше місто пережило війни та руйнування, але зберегло свій унікальний ансамбль Круглої площі — єдиний у світі зразок класицизму, що зберігся у повному складі.</p>
+            </div>
+            
+            <div lang="en">
+                <p>Poltava is a city where every stone has a voice. The official founding date is 899, although people lived here since the Scythian era. Poltava has always been the "key" to Ukraine. It was here in 1709 that the battle that changed the map of Europe took place.</p>
+                <p>But the true heart of the city is culture. It was here that Ivan Kotlyarevsky wrote "Aeneid", starting the modern Ukrainian language. Our city survived wars and destruction but preserved its unique Round Square ensemble — the only example of classicism in the world preserved in its entirety.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 lang="uk">🚀 Де зависає молодь?</h2>
+            <h2 lang="en">🚀 Youth Hangouts</h2>
+            
+            <div class="spot">
+                <strong lang="uk">Біла Альтанка та Іванова Гора</strong>
+                <strong lang="en">White Rotunda & Ivanova Hill</strong>
+                <p lang="uk">Точка №1 для зустрічі заходів сонця, кави з друзями та вуличних музикантів. Найкращий вид на Ворсклу та Поділ.</p>
+                <p lang="en">Point #1 for watching sunsets, coffee with friends, and street musicians. The best view of the Vorskla river.</p>
+            </div>
+
+            <div class="spot">
+                <strong lang="uk">"Стометрівка" (Вул. Соборності)</strong>
+                <strong lang="en">The "Hundred Meters" (Sobornosti Str)</strong>
+                <p lang="uk">Пішохідна зона з нескінченними кав'ярнями. Місце, де ти обов'язково зустрінеш когось зі знайомих.</p>
+                <p lang="en">Pedestrian zone with endless coffee shops. The place where you are guaranteed to meet someone you know.</p>
+            </div>
+
+            <div class="spot">
+                <strong lang="uk">Корпусний парк</strong>
+                <strong lang="en">Corpus Garden</strong>
+                <p lang="uk">Центр кільцевої розв'язки. Тут можна посидіти на траві, покататися на скейті або просто "почілити" між парами чи роботою.</p>
+                <p lang="en">The center of the roundabout. Here you can sit on the grass, skate, or just chill between classes or work.</p>
+            </div>
+        </div>
+    </main>
+
+    <aside>
+        <div class="card" style="padding: 10px; background: #ebf5fb; border: none;">
+            <a class="weatherwidget-io" href="https://forecast7.com/uk/49d5934d55/poltava/" data-label_1="ПОЛТАВА" data-label_2="ПОГОДА" data-theme="pure" >ПОЛТАВА ПОГОДА</a>
+            <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            </script>
+        </div>
+
+        <div class="card">
+            <h2 lang="uk">📍 Карта двіжу</h2>
+            <h2 lang="en">📍 Hotspots Map</h2>
+            <iframe width="100%" height="300" src="https://www.openstreetmap.org/export/embed.html?bbox=34.54,49.58,34.57,49.60&layer=mapnik&marker=49.589,34.555"></iframe>
+            <p style="font-size: 0.8rem; color: #777; margin-top: 10px;" lang="uk">На карті: Центр міста та основні пішохідні зони.</p>
+            <p style="font-size: 0.8rem; color: #777; margin-top: 10px;" lang="en">On the map: City center and main pedestrian zones.</p>
+        </div>
+
+        <div class="vibe-box">
+            <h3 lang="uk">✨ Полтавський вайб</h3>
+            <h3 lang="en">✨ Poltava Vibe</h3>
+            <p lang="uk">Полтава — це не про швидкість, це про смак життя. Це коли ти купуєш каву біля театру Гоголя і йдеш пішки до самої Альтанки, бо поспішати немає сенсу.</p>
+            <p lang="en">Poltava is not about speed, it's about the taste of life. It's when you buy coffee near the Gogol Theater and walk to the Rotunda because there's no point in rushing.</p>
+            
+            <a href="https://share.google/9PrdsQoZfMHMaawZD" target="_blank" class="tv-btn">ДИВИТИСЬ МІСТО+ LIVE</a>
+        </div>
+    </aside>
+</div>
+
+<script>
+    function setLang(lang) {
+        if (lang === 'en') {
+            document.body.classList.add('en-mode');
+            document.getElementById('en-btn').classList.add('active');
+            document.getElementById('ua-btn').classList.remove('active');
+        } else {
+            document.body.classList.remove('en-mode');
+            document.getElementById('ua-btn').classList.add('active');
+            document.getElementById('en-btn').classList.remove('active');
+        }
+    }
+</script>
+
+</body>
+</html>
